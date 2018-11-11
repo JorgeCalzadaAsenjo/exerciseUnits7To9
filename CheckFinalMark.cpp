@@ -32,40 +32,40 @@ using namespace std;
 
 int main()
 {
-    int num1, num2, num3;
-    float result;
+    int mark1, mark2, mark3;
+    float average;
 
 
     cout << "Enter the number 1: ";
-    cin >> num1;
+    cin >> mark1;
 
     cout << "Enter the number 2: ";
-    cin >> num2;
+    cin >> mark2;
 
     cout << "Enter the number 3: ";
-    cin >> num3;
+    cin >> mark3;
 
 
-    result = (num1 + num2 + num3) / 3.0;
+    average = (mark1 + mark2 + mark3) / 3.0;
 
 
-    if (num1 >= 4 && num2 >= 4 && num3 >= 4 && result >= 5)
+    if (mark1 >= 4 && mark2 >= 4 && mark3 >= 4 && average >= 5)
     {
-        cout << "The average is " << round(result) << endl;
+        cout << "The average is " << round(average) << endl;
     }
-    else if (num1 >= 4 && num2 >= 4 && num3 >= 4 && result < 5)
+    else if (mark1 >= 4 && mark2 >= 4 && mark3 >= 4 && average < 5)
     {
         cout << "The average is 4" << endl;
     }
-    else if (num1 < 4 || num2 < 4 || num3 < 4)
+    else if (mark1 < 4 || mark2 < 4 || mark3 < 4)
     {
-        if (result > 3)
+        if (average > 3)
         {
             cout << "The average is 3" << endl;
         }
         else
         {
-            cout << "The average is " << round(result) << endl;
+            cout << "The average is " << round(average) << endl;
         }
     }
 

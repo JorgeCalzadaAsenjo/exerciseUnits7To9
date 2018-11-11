@@ -4,8 +4,8 @@
     Calculate the average of three notes, taking into account some constraints:
         · If the average does not reach 5 but the notes are equal to or greater
           than 4, 4 will be displayed.
-        · If one of the notes does not reach 3, 3 will be shown or if the average
-          is lower than the average.
+        · If one of the notes does not reach 3, 3 will be shown or if the
+          average is lower than the average.
 */
 
 /*
@@ -31,40 +31,40 @@ public class CheckFinalMark
 {
     public static void Main()
     {
-        int num1, num2, num3;
-        float result;
+        int mark1, mark2, mark3;
+        float average;
 
 
         Console.Write("Enter the number 1: ");
-        num1 = Convert.ToInt32(Console.ReadLine());
+        mark1 = Convert.ToInt32(Console.ReadLine());
 
         Console.Write("Enter the number 2: ");
-        num2 = Convert.ToInt32(Console.ReadLine());
+        mark2 = Convert.ToInt32(Console.ReadLine());
 
         Console.Write("Enter the number 3: ");
-        num3 = Convert.ToInt32(Console.ReadLine());
+        mark3 = Convert.ToInt32(Console.ReadLine());
 
 
-        result = (float)((num1 + num2 + num3) / 3.0);
+        average = (float)((mark1 + mark2 + mark3) / 3.0);
 
 
-        if (num1 >= 4 && num2 >= 4 && num3 >= 4 && result >= 5)
+        if (mark1 >= 4 && mark2 >= 4 && mark3 >= 4 && average >= 5)
         {
-            Console.WriteLine("The average is " + Math.Round(result));
+            Console.WriteLine("The average is " + Math.Round(average));
         }
-        else if (num1 >= 4 && num2 >= 4 && num3 >= 4 && result < 5)
+        else if (mark1 >= 4 && mark2 >= 4 && mark3 >= 4 && average < 5)
         {
             Console.WriteLine("The average is 4");
         }
-        else if (num1 < 4 || num2 < 4 || num3 < 4)
+        else if (mark1 < 4 || mark2 < 4 || mark3 < 4)
         {
-            if (result > 3)
+            if (average > 3)
             {
                 Console.WriteLine("The average is 3");
             }
             else
             {
-                Console.WriteLine("The average is " + Math.Round(result));
+                Console.WriteLine("The average is " + Math.Round(average));
             }
         }
     }
